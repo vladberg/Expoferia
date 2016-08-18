@@ -1,0 +1,38 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+</IfModule>
+
+# Fix Rewrite
+Options -Multiviews
+
+# Mod Rewrite
+#Options +FollowSymLinks
+#RewriteEngine On
+#RewriteBase / 
+#RewriteCond %{REQUEST_FILENAME} !-d 
+#RewriteCond %{REQUEST_FILENAME}\.php -f 
+#RewriteRule ^(.*)$ $1.php 
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/gif A432000
+ExpiresByType image/jpg A432000
+ExpiresByType image/jpeg A432000
+ExpiresByType image/png A432000
+ExpiresByType image/ico A432000
+ExpiresByType image/bmp A432000
+ExpiresByType text/css A432000
+ExpiresByType text/javascript A432000
+ExpiresByType application/javascript A432000
+ExpiresByType application/x-javascript A432000
+</ifmodule>
+
+# servir paginas de error personalizadas
+ErrorDocument 400 /errores/400.html
+ErrorDocument 401 /errores/401.html
+ErrorDocument 403 /errores/403.html
+ErrorDocument 404 /errores/404.html
+ErrorDocument 500 /errores/500.html

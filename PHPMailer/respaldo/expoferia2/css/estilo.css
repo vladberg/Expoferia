@@ -1,0 +1,437 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+body {
+	font-family:"Open Sans Condensed";
+	font-size:15px;
+	color:#3c4046;
+	line-height:20px;
+	
+}
+
+/*Para links del sitio*/
+a.ligas{
+	color:#fff;
+	font-size:13px;
+	text-decoration:underline;
+	font-family: "Open Sans Condensed";
+}
+
+a.ligas:hover{
+	text-decoration:none;
+}
+
+a.linkopacity img {
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	-khtml-opacity: 0.6;
+
+}
+ 
+a.linkopacity:hover img {
+	filter:alpha(opacity=100);  
+	-moz-opacity: 1.0;  
+	opacity: 1.0;
+	-khtml-opacity: 1.0; 
+}
+
+/*Para encabezados y textos resaltados*/
+.titulos{
+font-family:"Cuprum";
+font-size:17px; color:#ff1909;
+font-weight:normal;
+}
+
+.titulos_azul{
+font-family:"Cuprum";
+font-size:17px;color:#088ec6;
+font-weight:normal;	
+}
+
+/*Para links del sitio*/
+a.ligas2{
+	color:#088ec6;
+	font-size:13px;
+	text-decoration:none;
+	font-family: "Open Sans Condensed";
+}
+
+a.ligas2:hover{
+	color:#e9028c;
+}
+
+a.linkpat img {
+	filter:alpha(opacity=100);  
+	-moz-opacity: 1.0;  
+	opacity: 1.0;
+	-khtml-opacity: 1.0; 	
+}
+ 
+a.linkpat:hover img {
+	filter:alpha(opacity=30);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	-khtml-opacity: 0.6;
+}
+
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#prerregistro {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#menu {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#contenidomedio {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#ligas {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top:8%;
+	margin-bottom:8%;
+}
+#banner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#redes {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#facebook {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+
+}
+#twitter {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top:8%;
+}
+#patrocinadores {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top:8%;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	padding:10px 0 10px 0;
+	background-color:#F22315;
+}
+#menuexpo {
+}
+#menu_expo {
+}
+.elemento {
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#prerregistro {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#menu {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#contenidomedio {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#ligas {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#banner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#redes {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#facebook {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#twitter {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#patrocinadores {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#menuexpo {
+}
+#menu_expo {
+}
+.elemento {
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+	/*margin-left:10%;*/
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 18.3673%;
+	display: block;
+}
+#prerregistro {
+	clear: none;
+	float: left;
+	margin-left: 40%;
+	width: 38.7755%;
+	display: block;
+	margin-top:0.5%;
+}
+#menu {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 79.5918%;
+	display: block;
+}
+#contenidomedio {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#ligas {
+	clear: both;
+	float: left;
+	margin-left: 5.5%;
+	width:4.3%;
+	display: block;
+}
+#banner {
+	clear: none;
+	float:none;
+	margin-left:4%;
+	width: 83%;
+	display: block;
+	margin-top:0.5%;
+}
+#redes {
+	clear: both;
+	float: left;
+	margin-left: auto;
+	margin-right:auto;
+	width: 100%;
+	display: block;
+}
+#facebook {
+	clear: both;
+	float: left;
+	margin-left: 9.5%;
+	width: 40%;
+	display: block;
+}
+#twitter {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 40%;
+	display: block;
+}
+#patrocinadores {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	padding:10px 0 10px 0;
+	display: block;
+	background-color:#F22315;
+
+}
+#menuexpo {
+}
+#menu_expo {
+}
+.elemento {
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}

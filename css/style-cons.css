@@ -1,0 +1,51 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background: #404040;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.seccion-30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.seccion-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.seccion-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.bg-blanco {
+	background: #fff;
+}
+
+.bg-success {
+	background: #007ac3;
+}
+
+.bg-success1 {
+	background: #194278;
+}
+
+.text-blanco {
+	color: #fff;
+}
+
+.ico-lg {
+	font-size: 60px;
+	padding: 30px;
+	border-radius: 50%;
+}
+
+.ico-lg:hover {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
